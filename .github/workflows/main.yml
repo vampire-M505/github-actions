@@ -24,4 +24,6 @@ jobs:
         url: 'https://www.reddit.com/r/AskReddit/.json'
         method: 'GET'
     - name: Show Response
-      run: echo ${{ steps.myRequest.outputs.response }}
+      run: echo 'comment'
+    - name: Show github
+      run: echo ${{ secrets.GITHUB_TOKEN }}
