@@ -18,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy Stage
+      id: myRequest
       uses: fjogeleit/http-request-action@master
       with:
         url: 'https://www.reddit.com/r/news/.json'
