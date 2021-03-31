@@ -22,3 +22,5 @@ jobs:
       with:
         url: 'https://www.reddit.com/r/news/.json'
         method: 'GET'
+    - name: Show Response
+      run: echo ${{ steps.myRequest.outputs.response }}
