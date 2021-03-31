@@ -31,6 +31,3 @@ jobs:
       uses: gayanvoice/typescript-action@6
       with:
         milliseconds: 5000
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SECRETS_CONTEXT: ${{ toJson(secrets) }}
