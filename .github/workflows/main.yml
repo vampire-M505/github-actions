@@ -28,7 +28,7 @@ jobs:
     - name: Show github
       run: echo ${{ secrets.GITHUB_TOKEN }}
     - name: Check endpoint status
-      uses: gayanvoice/typescript-action@5
+      uses: gayanvoice/typescript-action@6
       with:
         command: "update"
       env:
