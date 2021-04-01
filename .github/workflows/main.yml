@@ -28,8 +28,6 @@ jobs:
     - name: Show github
       run: echo ${{ secrets.GITHUB_TOKEN }}
     - name: Check endpoint status
-      uses: gayanvoice/typescript-action@1
+      uses: gayanvoice/javascript-action@1
       with:
         milliseconds: 5000
-    - name: Create directory
-      run: mkdir history 
