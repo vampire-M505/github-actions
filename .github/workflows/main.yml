@@ -30,4 +30,4 @@ jobs:
     - name: Check endpoint status
       uses: gayanvoice/javascript-action@1
       with:
-        milliseconds: 1000
+        milliseconds: 5000
