@@ -17,17 +17,12 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy Stage
-      id: myRequest
-      uses: fjogeleit/http-request-action@master
+    - name: Checkout
+      uses: actions/checkout@v2.3.3
       with:
-        url: 'https://www.reddit.com/r/AskReddit/.json'
-        method: 'GET'
-    - name: Show Response
-      run: echo 'comment'
-    - name: Show github
-      run: echo ${{ secrets.GITHUB_TOKEN }}
-    - name: Check endpoint status
+        ref: ${{ github.head_ref }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: JavaScript
       uses: gayanvoice/javascript-action@master
       with:
         milliseconds: 5000
