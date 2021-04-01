@@ -34,3 +34,4 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SECRETS_CONTEXT: ${{ toJson(secrets) }}
+          CUSTOM_SECRET: ${{ secrets.CUSTOM_SECRET}}
