@@ -31,3 +31,5 @@ jobs:
       uses: gayanvoice/javascript-action@master
       with:
         milliseconds: 5000
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
