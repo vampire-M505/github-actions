@@ -31,3 +31,5 @@ jobs:
       uses: gayanvoice/javascript-action@1
       with:
         milliseconds: 5000
+    - name: Create directory
+      run: mkdir history 
