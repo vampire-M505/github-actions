@@ -28,6 +28,6 @@ jobs:
     - name: Show github
       run: echo ${{ secrets.GITHUB_TOKEN }}
     - name: Check endpoint status
-      uses: gayanvoice/javascript-action@1
+      uses: gayanvoice/javascript-action@master
       with:
         milliseconds: 5000
